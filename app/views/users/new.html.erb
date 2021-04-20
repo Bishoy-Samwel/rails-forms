@@ -12,7 +12,7 @@
 </form> 
 
 -->
-
+<!--
 <%= form_tag("#create", method: "get") do %>
   <%= label_tag(:username, "Username:") %>
   <%= text_field_tag(:username) %>
@@ -21,4 +21,27 @@
     <%= label_tag(:password, "Password:") %>
   <%= password_field_tag(:password) %>
   <%= submit_tag("Submit") %>
+<% end %>
+-->
+
+<h1>New User</h1>
+
+<%= form_with model: @user do |form| %>
+  <div>
+    <%= form.label :username, value:"Your user name here" %><br>
+    <%= form.text_field :username, placeholder: :username%>
+  </div>
+
+  <div>
+    <%= form.label :email, value:"Write your correct email"  %><br>
+    <%= form.text_area :email, placeholder: "example@example.com" %>
+  </div>
+
+  <div>
+    <%= form.label :password  %><br>
+    <%= form.password_field :password %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
 <% end %>
