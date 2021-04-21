@@ -3,12 +3,10 @@
 # PROJECT: BUILDING WITH ACTIVE RECORD
 
 
-> This project has 3 models User, Comment, Post
-- User has many Posts
-- User has many commnets
-- Post has many Comments
-- Post belongs to user
-- Comment belongs to user
+> This project has 1 model User 2 views new, edit
+- new view to create new user
+- edit view to update existing user
+- Used form_with
 
 
 
