@@ -30,18 +30,31 @@
   <div>
     <%= form.label :username, value:"Your user name here" %><br>
     <%= form.text_field :username, placeholder: :username%>
+    <% @user.errors.full_messages_for(:username).each do |message| %>     
+    <div><%= message %></div>
+    <% end %>
+
   </div>
 
   <div>
     <%= form.label :email, value:"Write your correct email"  %><br>
     <%= form.text_area :email, placeholder: "example@example.com" %>
+    <% @user.errors.full_messages_for(:email).each do |message| %>     
+    <div><%= message %></div>
+    <% end %>
   </div>
 
   <div>
     <%= form.label :password  %><br>
     <%= form.password_field :password %>
+    <% @user.errors.full_messages_for(:password).each do |message| %>     
+    <div><%= message %></div>
+    <% end %>
   </div>
+
   <div>
     <%= form.submit %>
   </div>
+
 <% end %>
+
