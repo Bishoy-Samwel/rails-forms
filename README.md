@@ -46,7 +46,7 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Collins**
 - GitHub: [@CollinsTatang](https://github.com/CollinsTatang)
-- LinkedIn: [makungong-collins](https://www.linkedin.com/in/makungong-collins/
+- LinkedIn: [makungong-collins](https://www.linkedin.com/in/makungong-collins/)
 - Twitter: [@CollinsTatang1](https://twitter.com/CollinsTatang1)
 
 
